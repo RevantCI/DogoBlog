@@ -7,10 +7,11 @@ import Create from './Create';
 function App() {
   
   return (
+    <Router>
     <div className="App">
       <NavBar/>
      <div className="content">
-      <Router>
+      
         <Switch>
           <Route path="/" > 
            <Home />
@@ -19,9 +20,10 @@ function App() {
             <Create />
           </Route> 
         </Switch>
-        </Router>
-           </div>
+        
+      </div>
     </div>
+    </Router>
   );
 }
 
