@@ -14,8 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element = { <Home />}>
           </Route> 
-          <Route path="/create" >
-            <Create />
+          <Route path="/create" element = { <Create />}>
           </Route> 
         </Routes>
         </Router>
