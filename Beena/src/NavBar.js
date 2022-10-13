@@ -1,8 +1,8 @@
-import { Link, Router } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     return ( 
-        <Router>
+
         <nav className="navbar">
             <h1>The Dojo Blog</h1>
             <div className="links">
@@ -10,7 +10,7 @@ const NavBar = () => {
                 <Link to="/create"> New Blog</Link>
             </div>
         </nav>
-        </Router>
+    
      );
 }
  
