@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 const useFetch = (url) => {
     const [data, setData] = useState(null);
@@ -17,10 +17,9 @@ const useFetch = (url) => {
              return res.json();
             })
             .then(data => {
-             console.log(data);
-             setData(data);
-             setIsPending(false);
-             setError(null);
+                setIsPending(false);
+                setData(data);
+                setError(null);
             })
             .catch(err =>{
                 if(err.name === 'AbortError') {
@@ -35,7 +34,7 @@ const useFetch = (url) => {
         return () => abortCont.abort();
     }, [url]);
 
-    return {data, isPending, error}
+    return {data, isPending, error};
 }
 
 export default useFetch;
